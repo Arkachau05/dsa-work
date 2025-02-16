@@ -29,3 +29,4 @@ int main(){
         cout<<arr[i]<<",";
     }
 }
+//take the last element as pivot and put it in the correct position
