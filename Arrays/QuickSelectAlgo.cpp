@@ -39,7 +39,7 @@ using namespace std ;
 
  int returnindex(vector<int>&nums,int l,int r){
 
-     int pivot=nums[r];
+     int pivot=nums[r/2];
      int i=l;
      int j=r;
      while(j>i){

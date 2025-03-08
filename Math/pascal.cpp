@@ -4,7 +4,7 @@ using namespace std;
 int main(){
     int n=6;
     int r=5;
-    int s=n;;
+    int s=3;
     int matrix[s][s];   
     for(int i=0;i<s;i++){
         for (int j=0;j<i+1;j++){
