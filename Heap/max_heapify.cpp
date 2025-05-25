@@ -1,3 +1,4 @@
+//https://gist.github.com/Arkachau05/b2b7334c95aa7a887cdfddf7a1161d78
 #include<bits/stdc++.h>
 using namespace std;
 void Max_Heapify(vector<int>&arr, int index){
@@ -22,9 +23,14 @@ int main(){
     vector<int>arr;
     arr={1, 1, 2, 3, 4, 5, 6};
     int index=0;
-    for(int i=0;i<arr.size();i++){
-    Max_Heapify(arr,i);
+    // for (int i = arr.size() ; i >= 0; i--) {
+    //     Max_Heapify(arr, i);
+    // }
+    for (int i = arr.size() / 2 - 1; i >= 0; i--) {//more optimized
+        Max_Heapify(arr, i);
     }
+    
+    
     cout<<"Max Heapify: ";
     for(int i=0;i<arr.size();i++){
         cout<<arr[i]<<" ";

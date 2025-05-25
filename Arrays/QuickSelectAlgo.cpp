@@ -60,7 +60,7 @@ using namespace std ;
      if(idx==k-1){
       return nums[idx];
      }
-     else if(idx>k-1){
+     else if(idx>k-1){//indexing is 1 based 
         return kthvalue(nums,l,idx-1,k);
      }
      else{
